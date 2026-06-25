@@ -5,23 +5,17 @@ import Image from "next/image";
 export default function Home() {
   // Fungsi scroll manual yang kebal
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault(); // Halang browser dari melompat terus
+    e.preventDefault();
     console.log("CLICKED", id);
 
     const element = document.getElementById(id);
     console.log("ELEMENT FOUND:", element);
 
     if (element) {
-      // 1. Dapatkan ketinggian header (lebih kurang 80px berdasarkan class h-20 kita)
       const headerOffset = 80;
-
-      // 2. Kira kedudukan elemen dari atas skrin
       const elementPosition = element.getBoundingClientRect().top;
-
-      // 3. Campurkan kedudukan elemen dengan kedudukan scroll semasa, tolak header
       const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
-      // 4. Paksa window untuk scroll ke titik tersebut secara lancar
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth"
