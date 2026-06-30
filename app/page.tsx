@@ -38,9 +38,13 @@ export default function Home() {
               onClick={(e) => handleScroll(e, 'hero')}
               className="flex items-center gap-3"
             >
-              <div className="w-10 h-10 bg-[#934C93] rounded-full flex items-center justify-center text-white font-bold text-xs shadow-inner">
-                MJDKL
-              </div>
+          <div className="w-15 h-15 bg-[#934C93] rounded-full flex items-center justify-center shadow-inner overflow-hidden">
+            <img 
+              src="/logo.png" 
+              alt="Logo" 
+              className="w-full h-full object-contain" 
+            />
+          </div>
               <span className="font-bold text-[#3A243A] hidden sm:block">Masjid Kuala Linggi</span>
             </a>
           </div>
@@ -101,10 +105,10 @@ export default function Home() {
         <h2 className="text-3xl md:text-5xl font-bold mb-8">Pengenalan</h2>
         <div className="max-w-4xl text-lg md:text-xl leading-relaxed space-y-6">
           <p>
-            Masjid Jamek DUN Kuala Linggi merupakan nadi keagamaan dan pusat komuniti bagi penduduk setempat. Sejak penubuhannya, masjid ini telah menjadi tempat ibadah, pusat pendidikan, dan tempat penyatuan ummah.
+            Masjid merupakan institusi utama dalam pembentukan masyarakat Islam yang sejahtera, berfungsi bukan sahaja sebagai tempat ibadah, tetapi juga pusat ilmu, sosial dan perpaduan ummah. Seiring dengan peningkatan bilangan penduduk di kawasan Kuala Linggi serta keperluan kepada kemudahan ibadah yang lebih selesa dan strategik, pembinaan sebuah Masjid Jamek baharu di DUN Kuala Linggi amat diperlukan
           </p>
           <p>
-            Seiring dengan pertambahan populasi jemaah di sekitar Kuala Linggi dan kawasan berhampiran, fasiliti sedia ada kini memerlukan penambahbaikan segera bagi memastikan keselesaan dan keselamatan para jemaah sentiasa terjamin.
+            Masjid sedia ada, iaitu Masjid As-Sakinah Kampung Baru, kini tidak lagi mampu menampung jumlah jemaah yang semakin bertambah, terutamanya dari kampung-kampung dan taman-taman berhampiran. Lokasi masjid tersebut yang terletak di kawasan padat dengan kediaman menyebabkan proses pembesaran masjid tidak dapat dilaksanakan. Selain itu, ketiadaan kawasan parkir yang mencukupi turut menimbulkan kesulitan kepada para jemaah.
           </p>
         </div>
       </section>
@@ -112,18 +116,22 @@ export default function Home() {
       {/* SECTION 3: OBJEKTIF */}
       <section id="objektif" className="min-h-screen lg:h-screen flex flex-col items-center justify-center bg-gray-50 text-[#3A243A] p-8 md:p-24 pt-28 text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-12">Objektif Kutipan Dana</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl">
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-bold text-[#934C93] mb-4">Keselesaan</h3>
-            <p>Menyediakan ruang ibadah yang lebih kondusif dan selesa untuk jemaah menjalankan solat dan aktiviti keagamaan.</p>
+            <p>Menyediakan tempat ibadah yang selesa dan kondusif untuk penduduk setempat.</p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-bold text-[#934C93] mb-4">Kapasiti</h3>
-            <p>Menampung jumlah jemaah yang semakin bertambah terutamanya pada hari Jumaat dan hari-hari perayaan Islam.</p>
+            <p>Menjadi pusat pengembangan ilmu, dakwah, dan aktiviti kemasyarakatan.</p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-bold text-[#934C93] mb-4">Fasiliti</h3>
-            <p>Menaik taraf kemudahan asas yang usang untuk kegunaan masyarakat setempat dari pelbagai peringkat umur.</p>
+            <p>Menggalakkan perpaduan umat Islam melalui pelbagai program yang akan dijalankan di masjid.</p>
+          </div>
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h3 className="text-2xl font-bold text-[#934C93] mb-4">Fasiliti</h3>
+            <p>Berpotensi untuk menjadi Masjid Pelancongan kerana terletak di laluan ke kawasan pelancongan seperti pantai Telok Gong dan Sungai Tuang</p>
           </div>
         </div>
       </section>
@@ -186,15 +194,15 @@ export default function Home() {
             <div className="space-y-5">
               <div>
                 <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold mb-1">Nama Bank</p>
-                <p className="text-xl font-bold">Bank Islam (Contoh)</p>
+                <p className="text-xl font-bold">Bank Simpanan Nasional (BSN)</p>
               </div>
               <div>
                 <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold mb-1">Nama Akaun</p>
-                <p className="text-xl font-bold">Masjid Jamek DUN Kuala Linggi</p>
+                <p className="text-xl font-bold">JAWATANKUASA PENAJA MASJID JAMEK DUN KUALA LINGGI</p>
               </div>
               <div>
                 <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold mb-1">No. Akaun</p>
-                <p className="text-3xl font-extrabold text-[#934C93] tracking-widest">1234 5678 9012</p>
+                <p className="text-3xl font-extrabold text-[#934C93] tracking-widest">0411 7411 0004 7363</p>
               </div>
             </div>
           </div>
