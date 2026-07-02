@@ -38,13 +38,13 @@ export default function Home() {
               onClick={(e) => handleScroll(e, 'hero')}
               className="flex items-center gap-3"
             >
-          <div className="w-15 h-15 bg-[#934C93] rounded-full flex items-center justify-center shadow-inner overflow-hidden">
-            <img 
-              src="/logo.png" 
-              alt="Logo" 
-              className="w-full h-full object-contain" 
-            />
-          </div>
+              <div className="w-15 h-15 bg-[#934C93] rounded-full flex items-center justify-center shadow-inner overflow-hidden">
+                <img
+                  src="/logo.png"
+                  alt="Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
               <span className="font-bold text-[#3A243A] hidden sm:block">Masjid Kuala Linggi</span>
             </a>
           </div>
@@ -210,8 +210,12 @@ export default function Home() {
           <div className="bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-gray-100 w-full md:w-1/2 flex flex-col items-center justify-center hover:shadow-xl transition-shadow">
             <h3 className="text-2xl font-bold text-[#934C93] mb-6">Imbas DuitNow QR</h3>
 
-            <div className="w-56 aspect-square bg-gray-50 border-2 border-dashed border-gray-400 rounded-2xl flex items-center justify-center mb-6">
-              <span className="text-gray-400 text-sm text-center px-6">Muat Naik Gambar QR Code Di Sini</span>
+            <div className="w-56 aspect-square bg-gray-50 border-2 border border-gray-400 rounded-2xl flex items-center justify-center mb-6">
+              <img
+                src="/qr.png"
+                alt="QR Code"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             <p className="text-sm text-gray-500 font-medium">Boleh diimbas menggunakan semua aplikasi perbankan & e-Wallet.</p>
